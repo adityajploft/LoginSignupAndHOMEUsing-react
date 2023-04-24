@@ -1,0 +1,73 @@
+
+/* info css here */
+.company-info-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .toggle-container {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .toggle-container select{
+    width: 100px;
+    height: 40px;
+  }
+
+  .toggle-container button{
+    background-color: black;
+    color: white;
+  }
+  
+  .toggle {
+    width: 30px;
+    height: 15px;
+    background-color: green;
+    border-radius: 15px;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: -2.5px;
+    left: -2.5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle input[type="checkbox"] {
+    display: "";
+  }
+  
+  .toggle input[type="checkbox"]:checked + label .toggle {
+    background-color: #088f0f;
+  }
+  
+  .toggle input[type="checkbox"]:checked + label .toggle:before {
+    transform: translateX(15px);
+  }
+  
+  .toggle-container span {
+    margin-left: 10px;
+  }
+  
+  .company-details {
+    min-height: 100vh;
+
+    /* border: 5px solid black; */
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  
